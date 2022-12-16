@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif !important;
+    color: #293042;
+}
+
+a[aria-disabled="true"] {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.flight-animation {
+    animation: flight 5s infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes flight {
+    0%, 100% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}

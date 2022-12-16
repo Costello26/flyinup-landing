@@ -1,0 +1,16 @@
+{
+  "name": "flyinup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "compile:live": "npx tailwindcss -i ./src/input.css -o ./dist/assets/css/main.css --watch",
+    "compile": "npx tailwindcss -i ./src/input.css -o ./dist/assets/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}
